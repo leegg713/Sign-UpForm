@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Sign Up Form for Merigold Standard Fitness</h1>
+    <div class="image-container">
+        <img src="workoutSignUpForm.jpg">
+        <div class="content">
+            <div class="text-overlay">Merigold Mission</div>
+            <div id="company-statement">Downloading this application was the first step to getting the body you want.
+                Now
+                you just have to sign up with some information so we can track your workouts and we will get started.
+                Proud
+                of you and lets get to work.</div>
+        </div>
+    </div>
+
+    <form action="example.com/path" method="post">
+        <!-- /* First name field /* -->
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" placeholder="Bob">
+        <!-- /* Last name field /* -->
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" placeholder="Smith">
+        <br> <!-- Add a line break to move to the next line -->
+        <!-- Email field -->
+        <label for="user_email">Email Address:</label>
+        <input type="email" id="user_email" name="email" placeholder="you@example.com"required>
+        <!-- Phone number -->
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number">
+        <br> <!-- Add a line break to move to the next line -->
+        <label for="user_password">Password:</label>
+        <input type="password" id="user_password" name="user_password"required minlength="8" maxlength="25">
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password"required minlength="8"maxlength="25">
+
+    </form>
+
+    <!-- Create Account Button(Not Functional Yet) -->
+    <button id="createAccountButton">Create Account</button>
+<!-- Also not functional yet, -->
+<div id >Already have an account? <a href="">Log In</a></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
