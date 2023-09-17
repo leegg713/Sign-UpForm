@@ -23,31 +23,32 @@
     </div>
 
     <form action="example.com/path" method="post">
-        <!-- /* First name field /* -->
+        <!-- First name field -->
         <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" placeholder="Bob">
-        <!-- /* Last name field /* -->
+        <input type="text" id="first_name" placeholder="Bob" pattern="[A-Za-z]+" required>
+
+        <!-- Last name field -->
         <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" placeholder="Smith">
+        <input type="text" id="last_name" placeholder="Smith" pattern="[A-Za-z]+" required>
         <br> <!-- Add a line break to move to the next line -->
         <!-- Email field -->
         <label for="user_email">Email Address:</label>
-        <input type="email" id="user_email" name="email" placeholder="you@example.com"required>
+        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
         <!-- Phone number -->
         <label for="phone_number">Phone Number:</label>
-        <input type="tel" id="phone_number" name="phone_number">
+        <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10}" placeholder="1234567890">
         <br> <!-- Add a line break to move to the next line -->
         <label for="user_password">Password:</label>
-        <input type="password" id="user_password" name="user_password"required minlength="8" maxlength="25">
+        <input type="password" id="user_password" name="user_password"placeholder="*****" required minlength="8" maxlength="25">
         <label for="confirm_password">Confirm Password:</label>
-        <input type="password" id="confirm_password" name="confirm_password"required minlength="8"maxlength="25">
+        <input type="password" id="confirm_password" name="confirm_password"placeholder="*****" required minlength="8" maxlength="25">
 
     </form>
 
     <!-- Create Account Button(Not Functional Yet) -->
     <button id="createAccountButton">Create Account</button>
-<!-- Also not functional yet, -->
-<div id >Already have an account? <a href="">Log In</a></div>
+    <!-- Also not functional yet, -->
+    <div id>Already have an account? <a href="">Log In</a></div>
     <script src="script.js"></script>
 
 </body>
